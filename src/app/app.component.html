@@ -1,0 +1,131 @@
+<style>
+*{
+font-family: georgia;
+color: #566573;
+}
+body {
+margin:auto;
+width:50%;
+margin-bottom:200px;
+margin-top:70px;
+}
+
+header {
+display:flex;
+background-color:#293241;
+padding-bottom:20px;
+padding-top:10px;
+padding-left:250px;
+}
+
+footer{
+background-color:#293241;
+padding-top:70px;
+width:100%;
+padding-bottom:70px;
+}
+
+h1 {
+margin-left:60px;
+font-size:30px;
+color:white;
+}
+
+button {
+background-color:#ee6c4d;
+color:white;
+border:none;
+margin-right:30px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:15px;
+padding-right:15px;
+border-radius:10%;
+}
+
+.editbutton {
+background-color:#ee6c4d;
+border:none;
+margin-right:30px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:30px;
+padding-right:30px;
+margin-left:20px;
+margin-top:20px;
+position:relative;
+}
+
+.homebutton{
+background-color:#98c1d9;
+color: #566573;
+}
+
+.buttons{
+display:inline;
+margin-right:70px;
+justify-content: right;
+margin-top:20px;
+position:absolute;
+right:200px
+}
+
+h2{
+display:list;
+border:1px solid;
+margin-left:10px;
+padding-left:10px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.namedisplay{
+border-color:#606060;
+}
+
+.namedisplay p{
+font-size:20px;
+margin-left:10px
+}
+
+.footerinformation{
+width:50%;
+margin-left:370px;
+
+}
+
+</style>
+
+
+<header>
+  <h1>User Profile Review</h1>
+  <div class="buttons">
+    <button type="button" class="homebutton" onclick="alert('Going to Homescreen')">Back To Home</button>
+    <button type="button" onclick="alert('Log out')">Log Out</button>
+  </div>
+</header>
+<body>
+<div class="namedisplay">
+
+  <p>Name: </p><h2> <strong> {{name}}</strong> </h2>
+  <p>Surname: </p><h2><strong> {{surname}}</strong> </h2>
+  <p>Email: </p><h2> <strong> {{email}}</strong> </h2>
+  <p>Phone Number: </p><h2> <strong> {{phonenumber}}</strong> </h2>
+  <p>Age: </p><h2><strong> {{age}}</strong> </h2>
+  <p>Location: </p><h2><strong> {{location}}</strong> </h2>
+  <p>Gender: </p><h2><strong> {{gender}}</strong> </h2>
+  <p>Allergies: </p><h2><strong> {{allergies}}</strong> </h2>
+</div>
+<button type="button" class="editbutton" onclick="alert('Redirect to edit page')"> Edit</button>
+</body>
+
+<footer>
+<div class="footerinformation">
+  <p>About Us</p>
+  <p>Contact Us</p>
+  <p>Terms Of Use</p>
+  <p>Privacy Guidelines</p>
+  <p>User Agreement</p>
+</div>
+</footer>
+
