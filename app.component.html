@@ -1,0 +1,94 @@
+<style>
+body {
+margin:auto;
+width:50%;
+}
+
+header {
+display:flex;
+background-color:#93C3FD;
+padding-bottom:10px;
+padding-top:10px;
+padding-left:250px;
+
+}
+
+h1 {
+margin-left:60px;
+font-size:30px;
+}
+
+button {
+background-color:#ee6c4d;
+border:none;
+margin-right:30px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:15px;
+padding-right:15px;
+border-radius:10%;
+}
+
+.editbutton {
+background-color:#ee6c4d;
+border:none;
+margin-right:30px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:30px;
+padding-right:30px;
+margin-left:20px;
+
+}
+.homebutton{
+background-color:#293241;
+color:white;
+}
+.buttons{
+display:inline;
+margin-right:70px;
+justify-content: right;
+margin-top:20px;
+position:absolute;
+right:200px
+}
+h2{
+display:list;
+border:1px solid;
+margin-left:10px;
+padding-left:10px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.namedisplay{
+border-color:#606060;
+
+}
+
+.namedisplay p{
+font-size:20px;
+margin-left:10px
+}
+</style>
+
+
+<header>
+  <h1>User Profile Review</h1>
+  <div class="buttons">
+  <button type="button" class="homebutton" onclick="alert('Going to Homescreen')">Home Screen</button>
+  <button type="button" onclick="alert('Log out')">Log Out</button>
+  </div>
+</header>
+<body>
+<div class="namedisplay">
+  <p>Name: </p><h2> <strong> {{name}}</strong> </h2>
+  <p>Surname: </p><h2><strong> {{surname}}</strong> </h2>
+  <p>Age: </p><h2><strong> {{age}}</strong> </h2>
+  <p>Location: </p><h2><strong> {{location}}</strong> </h2>
+  <p>Height: </p><h2><strong> {{height}} cm</strong> </h2>
+  <p>Allergies: </p><h2><strong> {{allergies}}</strong> </h2>
+</div>
+<button type="button" class="editbutton" onclick="alert('Redirect to edit page')"> Edit</button>
+
+</body>
